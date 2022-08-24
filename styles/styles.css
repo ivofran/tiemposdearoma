@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+.color-acento {
+    color: rgb(243, 112, 166);
+}
+
+button {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 21px;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 112, 166);
+}
+
+button:hover {
+    background-color: rgb(243, 112, 166);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+   background-color: rgb(241, 238, 240);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(243, 112, 166);
+    font-size: 1.6em;
+    align-items: center;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(243, 112, 166);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/candle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#hero h1 {
+    color: white;
+    text-align: center;
+}
+
+/*#somos-fanaticos {
+
+}*/
+
+#somos-fanaticos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-productos {
+   background-color: rgba(30,30,30);
+   color: white;
+   text-align: center; 
+}
+
+#nuestros-productos .container {
+  padding: 100px 0px;
+}
+
+#nuestros-productos h2 {
+     margin: 0;
+     font-size: 3.2em;
+}
+
+#nuestros-productos p {
+ display: none;
+}
+
+#nuestros-productos .carta {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/difusores.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/vela.jpg");
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/cosmeticos.jpg");
+}
+
+#conocenos .container {
+   text-align: center;
+   padding: 200px 12px;
+}
+
+#conocenos li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#e-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#e-shop h2 {
+    font-size: 9vw;
+}
+
+#e-shop button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(230,230,230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgba(100,100,100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos-fanaticos .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-fanaticos .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        border-radius: 21px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+
+    #nuestros-productos .productos {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #nuestros-productos p {
+        display: block;
+
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta {
+        padding: 15px;
+    }
+
+    #conocenos {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/natural.jpg");
+        background-size: cover;
+        background-position: center
+    }
+
+    #conocenos .container {
+        color: white;
+    }
+
+    #e-shop h2 {
+        font-size: 3em;
+    }
+
+    #e-shop button{
+        font-size: 1.1em;
+    }
+
+    footer .container {
+        align-items: flex-end;
+    }
+  }
+
